@@ -11,4 +11,5 @@ class Movie():
 		self.mov_type = movie_type
 
 	def show_trailer(self):
+	"""输入播放地址，打开播放窗口"""
 		webbrowser.open(self.trailer_url)
