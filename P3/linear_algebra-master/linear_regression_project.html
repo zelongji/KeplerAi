@@ -12507,27 +12507,51 @@ $\begin{bmatrix}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#35831;&#25353;&#29031;&#31639;&#27861;&#30340;&#27493;&#39588;3&#65292;&#36880;&#27493;&#25512;&#28436;&#21487;&#36870;&#30697;&#38453;&#30340;&#21464;&#25442;&#12290;">&#35831;&#25353;&#29031;&#31639;&#27861;&#30340;&#27493;&#39588;3&#65292;&#36880;&#27493;&#25512;&#28436;<strong><em>&#21487;&#36870;&#30697;&#38453;</em></strong>&#30340;&#21464;&#25442;&#12290;<a class="anchor-link" href="#&#35831;&#25353;&#29031;&#31639;&#27861;&#30340;&#27493;&#39588;3&#65292;&#36880;&#27493;&#25512;&#28436;&#21487;&#36870;&#30697;&#38453;&#30340;&#21464;&#25442;&#12290;">&#182;</a></h1>
-<pre><code>3, 2, 1 || 1
-6, 4, 3 || 1
-2, 3, 7 || 1</code></pre>
-<p>在下面列出每一次循环体执行之后的增广矩阵(注意使用<a href="#分数的输入方法">分数语法</a>)</p>
+<h1 id="&#35831;&#25353;&#29031;&#31639;&#27861;&#30340;&#27493;&#39588;3&#65292;&#36880;&#27493;&#25512;&#28436;&#21487;&#36870;&#30697;&#38453;&#30340;&#21464;&#25442;&#12290;">&#35831;&#25353;&#29031;&#31639;&#27861;&#30340;&#27493;&#39588;3&#65292;&#36880;&#27493;&#25512;&#28436;<strong><em>&#21487;&#36870;&#30697;&#38453;</em></strong>&#30340;&#21464;&#25442;&#12290;<a class="anchor-link" href="#&#35831;&#25353;&#29031;&#31639;&#27861;&#30340;&#27493;&#39588;3&#65292;&#36880;&#27493;&#25512;&#28436;&#21487;&#36870;&#30697;&#38453;&#30340;&#21464;&#25442;&#12290;">&#182;</a></h1><p>在下面列出每一次循环体执行之后的增广矩阵(注意使用<a href="#分数的输入方法">分数语法</a>)</p>
 <p>$ Ab = \begin{bmatrix}
-    -6 &amp; -9 &amp; -21 &amp; -3 \\
-    0 &amp; 5 &amp; 19 &amp; 1 \\
-    0 &amp; -5 &amp; -18 &amp; -2 \end{bmatrix}$</p>
+    1 &amp; 3 &amp; 5 &amp; 1 \\
+    -9 &amp; 2 &amp; 4 &amp; 1 \\
+    -6 &amp; -9 &amp; -2 &amp; 1 \end{bmatrix}$</p>
 <p>$ --&gt; \begin{bmatrix}
-    -6 &amp; -9 &amp; -21 &amp; -3 \\
-    0 &amp; 5 &amp; 19 &amp; 1 \\
-    0 &amp; 0 &amp; 1 &amp; -1 \end{bmatrix}$</p>
+    1 &amp; 3 &amp; 5 &amp; 1 \\
+    -9 &amp; 2 &amp; 4 &amp; 1 \\
+    0 &amp; 9 &amp; 28 &amp; 7 \end{bmatrix}$</p>
 <p>$ --&gt; \begin{bmatrix}
-    1 &amp; \frac{3}{2}  &amp; \frac{7}{2} &amp; \frac{1}{2} \\
-    0 &amp; 1 &amp; \frac{19}{5} &amp; \frac{1}{5} \\
-    0 &amp; 0 &amp; 1 &amp; -1 \end{bmatrix}$</p>
+    1 &amp; 3 &amp; 5 &amp; 1 \\
+    0 &amp; 29 &amp; 49 &amp; 10 \\
+    0 &amp; 9 &amp; 28 &amp; 7 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    1 &amp; 3 &amp; 5 &amp; 1 \\
+    0 &amp; 9 &amp; 28 &amp; 7 \\
+    0 &amp; 29 &amp; 49 &amp; 10 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    1 &amp; 3 &amp; 5 &amp; 1 \\
+    0 &amp; 1 &amp; \frac{28}{9} &amp; \frac{7}{9} \\
+    0 &amp; 29 &amp; 49 &amp; 10 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    1 &amp; 3 &amp; 5 &amp; 1 \\
+    0 &amp; 1 &amp; \frac{28}{9} &amp; \frac{7}{9} \\
+    0 &amp; 0 &amp; \frac{-371}{9} &amp; \frac{-113}{9} \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    1 &amp; 3 &amp; 5 &amp; 1 \\
+    0 &amp; 1 &amp; \frac{28}{9} &amp; \frac{7}{9} \\
+    0 &amp; 0 &amp; 1 &amp; \frac{371}{113} \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    1 &amp; 0 &amp; \frac{-13}{3} &amp; \frac{-4}{3} \\
+    0 &amp; 1 &amp; \frac{28}{9} &amp; \frac{7}{9} \\
+    0 &amp; 0 &amp; 1 &amp; \frac{371}{113} \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    1 &amp; 0 &amp; 0 &amp; \frac{-5}{371} \\
+    0 &amp; 1 &amp; \frac{28}{9} &amp; \frac{7}{9} \\
+    0 &amp; 0 &amp; 1 &amp; \frac{371}{113} \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    1 &amp; 0 &amp; 0 &amp; \frac{-5}{371} \\
+    0 &amp; 1 &amp; 0 &amp; \frac{-9}{53} \\
+    0 &amp; 0 &amp; 1 &amp; \frac{371}{113} \end{bmatrix}$</p>
 <p>$方程有唯一解，为可逆矩阵：\\
-x = \frac{1}{2}\\
-y = \frac{1}{5} \\
-z = -1$</p>
+x = \frac{-5}{371}\\
+y = \frac{-9}{53} \\
+z = \frac{371}{113}$</p>
 
 </div>
 </div>
@@ -12574,24 +12598,48 @@ z = -1$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>请按照算法的步骤3，逐步推演<strong><em>奇异矩阵</em></strong>的变换。</p>
-
-<pre><code>0, 2, 1 || 1
-0, 4, 3 || 1
-0, 2, 2 || 1</code></pre>
 <p>在下面列出每一次循环体执行之后的增广矩阵(注意使用<a href="#分数的输入方法">分数语法</a>)</p>
 <p>$ Ab = \begin{bmatrix}
-    0 &amp; 2 &amp; 1 &amp; 1 \\
-    0 &amp; 4 &amp; 3 &amp; 1 \\
-    0 &amp; 0 &amp; 1 &amp; 0 \end{bmatrix}$</p>
+    0 &amp; -1 &amp; -7 &amp; 1 \\
+    0 &amp; 3 &amp; 5 &amp; 1 \\
+    0 &amp; 6 &amp; -9 &amp; 1 \end{bmatrix}$</p>
 <p>$ --&gt; \begin{bmatrix}
-    0 &amp; 2 &amp; 1 &amp; 1 \\
-    0 &amp; 0 &amp; 1 &amp; -1 \\
-    0 &amp; 0 &amp; 1 &amp; 0 \end{bmatrix}$</p>
+    0 &amp; 1 &amp; 7 &amp; -1 \\
+    0 &amp; 3 &amp; 5 &amp; 7 \\
+    0 &amp; 6 &amp; -9 &amp; 1 \end{bmatrix}$</p>
 <p>$ --&gt; \begin{bmatrix}
-    0 &amp; 2 &amp; 1 &amp; 1 \\
-    0 &amp; 0 &amp; 1 &amp; -1 \\
+    0 &amp; 1 &amp; 7 &amp; -1 \\
+    0 &amp; 0 &amp; 16 &amp; -4 \\
+    0 &amp; 6 &amp; -9 &amp; 1 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    0 &amp; 1 &amp; 7 &amp; -1 \\
+    0 &amp; 0 &amp; 16 &amp; -4 \\
+    0 &amp; 0 &amp; 51 &amp; -7 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    0 &amp; 1 &amp; 7 &amp; -1 \\
+    0 &amp; 0 &amp; 1 &amp; \frac{-1}{4} \\
+    0 &amp; 0 &amp; 51 &amp; -7 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    0 &amp; 1 &amp; 7 &amp; -1 \\
+    0 &amp; 0 &amp; 1 &amp; \frac{-1}{4} \\
+    0 &amp; 0 &amp; 0 &amp; \frac{-23}{4} \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    0 &amp; 1 &amp; 7 &amp; -1 \\
+    0 &amp; 0 &amp; 1 &amp; \frac{-1}{4} \\
     0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}$</p>
-<p>$转化后为\\
+<p>$ --&gt; \begin{bmatrix}
+    0 &amp; 1 &amp; 7 &amp; -1 \\
+    0 &amp; 0 &amp; 1 &amp; 0 \\
+    0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    0 &amp; 1 &amp; 7 &amp; 0 \\
+    0 &amp; 0 &amp; 1 &amp; 0 \\
+    0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}$</p>
+<p>$ --&gt; \begin{bmatrix}
+    0 &amp; 1 &amp; 0 &amp; 0 \\
+    0 &amp; 0 &amp; 1 &amp; 0 \\
+    0 &amp; 0 &amp; 0 &amp; 1 \end{bmatrix}$<br>
+$转化后为\\
 0 = 1, 无解, 该矩阵为奇异矩阵 $</p>
 
 </div>
@@ -12766,10 +12814,10 @@ OK
 
 
 
-<div id="78d2a590-59c2-47d5-821e-05488dc246e3"></div>
+<div id="9ebe720d-ee05-4011-a6e8-6013c0e192bd"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#78d2a590-59c2-47d5-821e-05488dc246e3');
+var element = $('#9ebe720d-ee05-4011-a6e8-6013c0e192bd');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13598,10 +13646,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="6f19a000-27ed-4029-9095-6b456b47bcb1"></div>
+<div id="18709033-fc48-4978-ac10-4b3e61018e91"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#6f19a000-27ed-4029-9095-6b456b47bcb1');
+var element = $('#18709033-fc48-4978-ac10-4b3e61018e91');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -14696,10 +14744,10 @@ $$</p>
 
 
 
-<div id="69115a2a-780a-4619-92a2-bbc4a4e2fc84"></div>
+<div id="800cb86a-a174-485b-bba3-7a3daa3c23b8"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#69115a2a-780a-4619-92a2-bbc4a4e2fc84');
+var element = $('#800cb86a-a174-485b-bba3-7a3daa3c23b8');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -15538,10 +15586,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="9dc6eaea-bb26-41ef-9fcf-09a1454e7f5c"></div>
+<div id="4e133630-e791-4e61-84d6-280c30f2f2a7"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9dc6eaea-bb26-41ef-9fcf-09a1454e7f5c');
+var element = $('#4e133630-e791-4e61-84d6-280c30f2f2a7');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -16395,10 +16443,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-<div id="c2b7e3f0-a9b0-4ea0-9900-57055f6fbed6"></div>
+<div id="9a173cad-6ab2-477a-8bf5-d58efd559173"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c2b7e3f0-a9b0-4ea0-9900-57055f6fbed6');
+var element = $('#9a173cad-6ab2-477a-8bf5-d58efd559173');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
