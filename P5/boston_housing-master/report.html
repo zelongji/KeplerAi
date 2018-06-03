@@ -12405,10 +12405,10 @@ Standard deviation of prices: $165,171.13
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#38382;&#39064; 8 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#182;</a></h3><ul>
-<li>K折交叉验证法就是将数据按照比例分成K份，每次取其中一份儿做测试集，其他的做训练集，计算分数，将获取到的所有分数做一个平均，就是当前模型的分数，根据模型分数来判断当前模型的好坏；</li>
+<li>K折交叉验证法就是将数据按照比例分成K份，每次取其中一份儿做验证集，其他的做训练集，计算分数，将获取到的所有分数做一个平均，就是当前模型的分数，根据模型分数来判断当前模型的好坏；</li>
 <li>GridSearchCV中有一个参数叫做cv，可以构建交叉验证对象然后传入；</li>
 <li>平均值、标准差、交叉验证等一系列的分数和计算时间；</li>
-<li>不使用交叉验证得到的结果不如使用了有说服力，因为验证的数据过少，交叉验证将数据切分之后将每份儿数据都进行了验证，所以更有说服力。</li>
+<li>网格搜索是模型调优的过程，K折交叉验证用于网格搜索中，而测试集是不可以参与模型调优的。这样用测试集进行评估的时候得到的评分就是不准确的。</li>
 </ul>
 
 </div>
@@ -12625,7 +12625,7 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 生成三个客户的数据</span>
@@ -12678,7 +12678,7 @@ Predicted selling price for Client 3&#39;s home: $942,666.67
 <li>客户3的的房间数为8，房间最多，且社区贫困指数在三位客户中最低，说明购房的能力较高，学生老师的比例小，可以说明当地的教育投入较大，所以价格高于其他两个客户，是合理的。</li>
 </ul>
 </li>
-<li>综上所述：预测是合理的。</li>
+<li>综上所述：根据问题1中的预测可以说明符合预期预测（这里我们可以根据房子的特征来做横向比较；也可以与数据集中特征相近的房子做纵向比较。最终还可以跟统计数据中的最大值，最小值，均值等做比较）。</li>
 </ul>
 
 </div>
